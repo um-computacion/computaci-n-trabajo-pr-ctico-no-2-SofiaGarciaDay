@@ -16,5 +16,19 @@ class TestPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("menem"))
         self.assertTrue(is_palindrome("reconocer"))
 
+    def test_phrase_palindromes(self):
+        self.assertTrue(is_palindrome("A man, a plan, a canal: Panama"))
+        self.assertTrue(is_palindrome("Was it a car or a cat I saw?"))
+        self.assertTrue(is_palindrome("No lemon, no melon"))
+        self.assertTrue(is_palindrome("Allí va Ramón y no maravilla"))
+        self.assertTrue(is_palindrome("Alí tomó tila"))
+        self.assertTrue(is_palindrome("Ana la galana"))
+        self.assertTrue(is_palindrome("Allí ves Sevilla"))
+        self.assertTrue(is_palindrome("Amor a Roma"))
+        self.assertTrue(is_palindrome("Ella te dará detalle"))
+        self.assertTrue(is_palindrome("Ese bello sol le besé"))
+        self.assertTrue(is_palindrome("La ruta natural"))
+        self.assertTrue(is_palindrome("La moral, claro, mal"))
+
 if __name__ == '__main__':
     unittest.main()
