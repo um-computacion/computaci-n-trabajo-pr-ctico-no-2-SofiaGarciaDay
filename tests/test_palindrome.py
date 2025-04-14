@@ -44,6 +44,12 @@ class TestPalindrome(unittest.TestCase):
         self.assertFalse(is_palindrome("cafe"))
         self.assertFalse(is_palindrome("churro"))
 
+    def test_edge_cases(self):
+        self.assertTrue(is_palindrome(""))
+        self.assertTrue(is_palindrome("a"))
+        self.assertTrue(is_palindrome("A"))
+        self.assertTrue(is_palindrome("12321")) 
+        self.assertFalse(is_palindrome("123a321")) 
 
 if __name__ == '__main__':
     unittest.main()
