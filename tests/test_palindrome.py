@@ -49,7 +49,7 @@ class TestPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("a"))
         self.assertTrue(is_palindrome("A"))
         self.assertTrue(is_palindrome("12321")) 
-        self.assertFalse(is_palindrome("123a321")) 
+        self.assertTrue(is_palindrome("123a321")) 
 
 if __name__ == '__main__':
     unittest.main()
