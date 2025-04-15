@@ -14,3 +14,4 @@ def is_palindrome(text: str) -> bool:
             resultado += caracter
 
     return resultado == resultado[::-1]
+
