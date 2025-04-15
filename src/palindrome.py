@@ -14,3 +14,10 @@ def is_palindrome(text: str) -> bool:
             resultado += caracter
 
     return resultado == resultado[::-1]
+
+if __name__ == "_main_":
+    texto = input("Ingrese una palabra o frase para verificar si es un palíndromo: ")
+    if is_palindrome(texto):
+        print(f"La frase '{texto}' es un palíndromo.")
+    else:
+        print(f"La frase '{texto}' no es un palíndromo.")
